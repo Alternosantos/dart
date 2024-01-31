@@ -22,7 +22,7 @@ void main()
             a = double.parse(stdin.readLineSync()!);
             print("Introduza o segundo num:\n>> ");
             b = double.parse(stdin.readLineSync()!);
-            print("\nSoma: ${a + b}");
+            print("\n$a + $b = ${a + b}");
             break;
         case 4:
             print("Introduza o primeiro num:\n>> ");
@@ -32,7 +32,7 @@ void main()
             if (b == 0) {
                 print("Nao pode dividir por zero!");
             } else {
-                print("\nDivisao: ${a / b}");
+                print("\n$a / $b = ${a / b}");
             }
             break;
         case 2:
@@ -40,17 +40,18 @@ void main()
             a = double.parse(stdin.readLineSync()!);
             print("Introduza o segundo num:\n>> ");
             b = double.parse(stdin.readLineSync()!);        
-            print("\nSubtracao: ${a - b}");
+            print("\n$a - $b = ${a - b}");
             break;
         case  3:
             print("Introduza o primeiro num:\n>> ");
             a = double.parse(stdin.readLineSync()!);
             print("Introduza o segundo num:\n>> ");
             b = double.parse(stdin.readLineSync()!);
-            print("\nMultiplicacao: ${a * b}");
+            print("\n$a * $b = ${a * b}");
             break;
         case 0:
             print("A sair...");
+            clearConsole();
             break;    
         default:
             print("Opcao invalida!");
